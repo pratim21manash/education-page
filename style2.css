@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Red+Hat+Display:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 0rem 0rem;
+    background-color: rgb(255, 255, 255);
+    z-index: 999;
+}
+.container{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    overflow: hidden;
+}
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+.logo .logo_link img{
+    height: 36px;
+    width: fit-content;
+    object-fit: cover;
+}
+.navbar .navigation{
+    display: flex;
+    justify-content: center;
+}
+.navbar .navigation ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.6rem;
+}
+.navbar .navigation ul .nav-link{
+    font-size: 16px;
+    font-weight: 500;
+    color: #a10202;
+    text-transform: uppercase;
+    padding: 0.5rem 0rem;
+    border-bottom: 2px solid transparent;
+}
+.navbar .navigation ul .nav-link:hover{
+   color: rgb(35, 9, 139);
+   border-bottom: 2px solid red;
+   font-size: 22px;
+}
+.navbar .nav-button{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+.navbar .nav-button .icon{
+    width: 35px;
+    height: 35px;
+    border: 1px solid transparent;
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #4b4c49;
+    cursor: pointer;
+    transition: color 1s;
+}
+.navbar .nav-button .icon:hover{
+    box-shadow: 2px 2px 3px #990a0a;
+    background-color: #8eb048;
+    font-size: 30px;
+}
+.header{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header .header-bg{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('./images/header.mp4');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+.header .container1{
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 650px;
+}
+.header .container1 .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 650px;
+    background: red;
+    padding: 4rem 2rem;
+    border-left: 4rem 2rem;
+    border-left: 2px solid #fff;
+}
+.header .container1 .card p{
+    font-size: 16px;
+    line-height: 25px;
+    color: #eee;
+    text-align: center;
+}
+.header .container1 .card .button{
+    padding: 2rem 0rem;
+}
+.header .container1 .card .button .btn-start{
+    padding: 1rem 3rem;
+    padding-left: 1rem;
+    background-color: #0a9913;
+    color: #fff;
+    box-shadow: 1px 1px 3px #e4020244;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border-left: 2px solid #fff;
+    border-right: 2px solid transparent;
+    transition: padding 1s
+}
+.header .container1 .card .button .btn-star:hover{
+    padding-left: 3rem;
+    padding-right: 1rem;
+    background-color: #e40202;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #fff;
+}
